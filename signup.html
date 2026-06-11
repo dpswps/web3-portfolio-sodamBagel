@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>회원가입 | SODAM BAGEL</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="auth-page signup-page">
+    <header class="site-header">
+      <div class="inner header-inner">
+        <a class="brand" href="./index.html" aria-label="Sodam Bagel home">
+          <img src="./이미지/header_mainlogo_crop.png" alt="SODAM BAGEL" />
+        </a>
+        <nav class="main-nav" id="main-nav" aria-label="주요 메뉴">
+          <a href="./brand.html">브랜드</a>
+          <a href="./bagel.html">베이글</a>
+          <a href="./story.html">이야기</a>
+          <a href="./recipe.html">레시피</a>
+          <a href="./customer.html">고객센터</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" aria-label="검색" onclick="location.href='./search.html'">
+            <img src="./이미지/header_search_icon_crop.png" alt="" />
+          </button>
+          <button type="button" aria-label="마이페이지" onclick="location.href='./login.html'">
+            <img src="./이미지/header_human_icon_crop.png" alt="" />
+          </button>
+          <button type="button" aria-label="장바구니" onclick="location.href='./cart.html'">
+            <img src="./이미지/header_sp_icon03_crop.png" alt="" />
+          </button>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-nav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="auth-hero">
+        <div class="inner auth-layout">
+          <div class="auth-visual signup-visual">
+            <div class="auth-copy">
+              <h1>소담 베이글의<br /><span>다양한 혜택</span>을<br />누려보세요!</h1>
+              <p>회원가입하고 더 맛있고 건강한 일상을 함께 시작해요.</p>
+              <ul class="signup-point-list">
+                <li><strong>회원 전용 혜택</strong><span>쿠폰, 이벤트, 신제품 소식을 가장 먼저!</span></li>
+                <li><strong>포인트 적립</strong><span>구매 금액의 1% 적립으로 더 큰 혜택을!</span></li>
+                <li><strong>간편한 주문</strong><span>배송지와 주문 정보를 저장하고 빠르게 주문하세요.</span></li>
+              </ul>
+            </div>
+            <div class="auth-image image-slot">이미지</div>
+          </div>
+          <section class="auth-card signup-card" aria-labelledby="signup-title">
+            <h2 id="signup-title">회원가입</h2>
+            <div class="signup-steps">
+              <span class="active">1. 약관동의</span>
+              <span>2. 정보입력</span>
+              <span>3. 가입완료</span>
+            </div>
+            <form class="terms-form" action="#">
+              <h3>약관 동의</h3>
+              <p>회원가입을 위해 아래 약관에 동의해주세요.</p>
+              <label><input type="checkbox" checked />전체 동의하기</label>
+              <label><input type="checkbox" checked />이용약관 동의 (필수)</label>
+              <label><input type="checkbox" checked />개인정보 수집 및 이용 동의 (필수)</label>
+              <label><input type="checkbox" checked />개인정보 제3자 제공 동의 (필수)</label>
+              <label><input type="checkbox" checked />마케팅 정보 수신 동의 (선택)</label>
+              <label><input type="checkbox" checked />개인정보 국외 이전 동의 (선택)</label>
+              <button class="auth-primary" type="submit">다음 단계로</button>
+              <a class="auth-cancel" href="./login.html">취소</a>
+            </form>
+          </section>
+        </div>
+      </section>
+
+      <section class="member-benefit-section">
+        <div class="inner">
+          <h2>회원만을 위한 <span>특별한 혜택</span></h2>
+          <div class="member-benefit-grid">
+            <article><strong>신규 회원 쿠폰</strong><p>회원 가입 시 즉시 사용 가능한 10% 할인 쿠폰 증정</p></article>
+            <article><strong>생일 축하 쿠폰</strong><p>생일을 축하하는 15% 할인 쿠폰을 보내드려요</p></article>
+            <article><strong>포인트 적립</strong><p>구매 금액의 1% 적립으로 현금처럼 사용 가능해요</p></article>
+            <article><strong>이벤트 &amp; 신제품 소식</strong><p>다양한 이벤트와 신제품 소식을 가장 먼저 받아보세요</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="auth-join-banner">
+        <div class="inner auth-banner-inner">
+          <div>
+            <h2>회원가입이 어려우신가요?</h2>
+            <p>고객센터로 문의하시면 친절하게 안내해드릴게요.</p>
+          </div>
+          <a class="btn outline" href="./customer.html">고객센터 바로가기</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner footer-inner">
+        <div>
+          <strong class="footer-logo">SODAM BAGEL</strong>
+          <p>상호 : 소담베이글 ㅣ 대표 : 김소담 ㅣ 사업자등록번호 : 123-45-67890</p>
+          <p>주소 : 서울특별시 강남구 테헤란로 123, 1층 ㅣ 고객센터 : 070-1234-5678</p>
+          <small>COPYRIGHT(C) SODAM BAGEL. ALL RIGHTS RESERVED.</small>
+        </div>
+        <div class="sns">
+          <a href="#" aria-label="Instagram"><img src="./이미지/footer_icon1.png" alt="" /></a>
+          <a href="#" aria-label="Facebook"><img src="./이미지/footer_icon2.png" alt="" /></a>
+          <a href="#" aria-label="YouTube"><img src="./이미지/footer_icon3.png" alt="" /></a>
+          <a href="#" aria-label="Blog"><img src="./이미지/footer_icon4.png" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainNav = document.querySelector(".main-nav");
+
+      if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+
+          document.body.classList.toggle("nav-open", !isOpen);
+          menuToggle.setAttribute("aria-expanded", String(!isOpen));
+          menuToggle.setAttribute("aria-label", isOpen ? "메뉴 열기" : "메뉴 닫기");
+        });
+
+        mainNav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            document.body.classList.remove("nav-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "메뉴 열기");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

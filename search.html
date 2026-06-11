@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>검색 | SODAM BAGEL</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="search-subpage">
+    <header class="site-header">
+      <div class="inner header-inner">
+        <a class="brand" href="./index.html" aria-label="Sodam Bagel home">
+          <img src="./이미지/header_mainlogo_crop.png" alt="SODAM BAGEL" />
+        </a>
+        <nav class="main-nav" id="main-nav" aria-label="주요 메뉴">
+          <a href="./brand.html">브랜드</a>
+          <a href="./bagel.html">베이글</a>
+          <a href="./story.html">이야기</a>
+          <a href="./recipe.html">레시피</a>
+          <a href="./customer.html">고객센터</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" aria-label="검색" onclick="location.href='./search.html'">
+            <img src="./이미지/header_search_icon_crop.png" alt="" />
+          </button>
+          <button type="button" aria-label="마이페이지" onclick="location.href='./login.html'">
+            <img src="./이미지/header_human_icon_crop.png" alt="" />
+          </button>
+          <button type="button" aria-label="장바구니" onclick="location.href='./cart.html'">
+            <img src="./이미지/header_sp_icon03_crop.png" alt="" />
+          </button>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-nav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="search-head">
+        <div class="inner">
+          <a class="search-back" href="./index.html">검색</a>
+          <form class="search-page-form" action="#" role="search">
+            <input type="search" value="크랜베리 베이글" aria-label="검색어" />
+            <button type="submit">검색</button>
+          </form>
+          <p class="search-count">“크랜베리 베이글”에 대한 검색결과 <strong>42건</strong></p>
+          <div class="search-result-tabs">
+            <button class="active" type="button">전체<br /><span>42</span></button>
+            <button type="button">베이글 <span>8</span></button>
+            <button type="button">레시피 <span>14</span></button>
+            <button type="button">이야기 <span>7</span></button>
+            <button type="button">공지사항 <span>5</span></button>
+            <button type="button">FAQ <span>8</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="search-body">
+        <div class="inner search-layout">
+          <aside class="search-filter">
+            <div class="filter-head">
+              <h2>필터</h2>
+              <button type="button">초기화</button>
+            </div>
+            <fieldset>
+              <legend>카테고리</legend>
+              <label><input type="radio" name="category" checked />전체</label>
+              <label><input type="radio" name="category" />베이글</label>
+              <label><input type="radio" name="category" />레시피</label>
+              <label><input type="radio" name="category" />이야기</label>
+              <label><input type="radio" name="category" />공지사항</label>
+              <label><input type="radio" name="category" />FAQ</label>
+            </fieldset>
+            <fieldset>
+              <legend>정렬</legend>
+              <select aria-label="정렬">
+                <option>관련도순</option>
+                <option>최신순</option>
+                <option>인기순</option>
+              </select>
+            </fieldset>
+            <fieldset>
+              <legend>기간</legend>
+              <label><input type="radio" name="period" checked />전체</label>
+              <label><input type="radio" name="period" />1개월</label>
+              <label><input type="radio" name="period" />3개월</label>
+              <label><input type="radio" name="period" />6개월</label>
+              <label><input type="radio" name="period" />1년</label>
+            </fieldset>
+          </aside>
+
+          <div class="search-results">
+            <section class="result-section">
+              <div class="result-title-row"><h2>베이글 <span>(8)</span></h2><a href="./bagel.html">더보기</a></div>
+              <div class="search-product-grid">
+                <article><div class="search-product-image image-slot">이미지</div><h3>크랜베리 베이글</h3><p>새콤달콤한 크랜베리가 듬뿍 씹히는 건강한 베이글</p><strong>3,100원</strong></article>
+                <article><div class="search-product-image image-slot">이미지</div><h3>크랜베리 베이글 세트</h3><p>온 가족이 함께 즐기는 크랜베리 베이글 세트</p><strong>11,600원</strong></article>
+                <article><div class="search-product-image image-slot">이미지</div><h3>크랜베리 베이글 샌드위치</h3><p>크림치즈와 신선한 채소가 어우러진 인기 샌드위치</p><strong>6,800원</strong></article>
+                <article><div class="search-product-image image-slot">이미지</div><h3>연어 크랜치즈 베이글</h3><p>연어와 크림치즈의 조화가 완벽한 프리미엄 메뉴</p><strong>7,500원</strong></article>
+              </div>
+            </section>
+
+            <section class="result-section">
+              <div class="result-title-row"><h2>레시피 <span>(14)</span></h2><a href="./recipe.html">더보기</a></div>
+              <div class="search-list-grid">
+                <article><div class="search-thumb image-slot">이미지</div><h3>연어 크림치즈 베이글 샌드위치</h3><p>연어와 크림치즈의 완벽한 조화!</p></article>
+                <article><div class="search-thumb image-slot">이미지</div><h3>베리 크랜베리 베이글</h3><p>달콤한 디저트 레시피.</p></article>
+                <article><div class="search-thumb image-slot">이미지</div><h3>크랜베리 베이글 프렌치토스트</h3><p>든든한 프렌치토스트.</p></article>
+              </div>
+            </section>
+
+            <section class="result-section">
+              <div class="result-title-row"><h2>이야기 <span>(7)</span></h2><a href="./story.html">더보기</a></div>
+              <div class="search-list-grid">
+                <article><div class="search-thumb image-slot">이미지</div><h3>크랜베리의 놀라운 효능</h3><p>크랜베리의 건강 효능에 대해 알아보세요.</p></article>
+                <article><div class="search-thumb image-slot">이미지</div><h3>크랜베리 베이글 탄생 이야기</h3><p>시그니처 메뉴의 비하인드 스토리.</p></article>
+                <article><div class="search-thumb image-slot">이미지</div><h3>겨울에 더 맛있는 크랜베리</h3><p>제철 크랜베리의 맛과 영양.</p></article>
+              </div>
+            </section>
+
+            <div class="search-bottom-grid">
+              <section class="result-section compact">
+                <div class="result-title-row"><h2>공지사항 <span>(5)</span></h2><a href="./customer.html#notice">더보기</a></div>
+                <div class="search-notice-list">
+                  <div><span>신제품</span><strong>크랜베리 베이글 출시 안내</strong><time>2024-04-20</time></div>
+                  <div><span>이벤트</span><strong>크랜베리 베이글 구매 시 크림치즈 증정 이벤트</strong><time>2024-04-10</time></div>
+                  <div><span>공지</span><strong>베이글 제품 가격 조정 안내</strong><time>2024-03-28</time></div>
+                </div>
+              </section>
+              <section class="result-section compact">
+                <div class="result-title-row"><h2>FAQ <span>(8)</span></h2><a href="./customer.html#faq">더보기</a></div>
+                <div class="search-faq-list">
+                  <article>크랜베리 베이글의 크랜베리는 어떤 제품인가요?</article>
+                  <article>크랜베리 베이글은 어떻게 보관해야 하나요?</article>
+                  <article>크랜베리 베이글은 언제 구매할 수 있나요?</article>
+                </div>
+              </section>
+            </div>
+
+            <section class="search-help">
+              <div>
+                <h2>원하시는 정보를 찾지 못하셨나요?</h2>
+                <p>고객센터에서 더 자세한 도움을 받아보세요.</p>
+              </div>
+              <a class="btn white" href="./customer.html">고객센터 바로가기</a>
+            </section>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner footer-inner">
+        <div>
+          <strong class="footer-logo">SODAM BAGEL</strong>
+          <p>상호 : 소담베이글 ㅣ 대표 : 김소담 ㅣ 사업자등록번호 : 123-45-67890</p>
+          <p>주소 : 서울특별시 강남구 테헤란로 123, 1층 ㅣ 고객센터 : 070-1234-5678</p>
+          <small>COPYRIGHT(C) SODAM BAGEL. ALL RIGHTS RESERVED.</small>
+        </div>
+        <div class="sns">
+          <a href="#" aria-label="Instagram"><img src="./이미지/footer_icon1.png" alt="" /></a>
+          <a href="#" aria-label="Facebook"><img src="./이미지/footer_icon2.png" alt="" /></a>
+          <a href="#" aria-label="YouTube"><img src="./이미지/footer_icon3.png" alt="" /></a>
+          <a href="#" aria-label="Blog"><img src="./이미지/footer_icon4.png" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainNav = document.querySelector(".main-nav");
+
+      if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+
+          document.body.classList.toggle("nav-open", !isOpen);
+          menuToggle.setAttribute("aria-expanded", String(!isOpen));
+          menuToggle.setAttribute("aria-label", isOpen ? "메뉴 열기" : "메뉴 닫기");
+        });
+
+        mainNav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            document.body.classList.remove("nav-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "메뉴 열기");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

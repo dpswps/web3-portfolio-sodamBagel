@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>레시피 | SODAM BAGEL</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="recipe-subpage">
+    <header class="site-header">
+      <div class="inner header-inner">
+        <a class="brand" href="./index.html" aria-label="Sodam Bagel home">
+          <img src="./이미지/header_mainlogo_crop.png" alt="SODAM BAGEL" />
+        </a>
+        <nav class="main-nav" id="main-nav" aria-label="주요 메뉴">
+          <a href="./brand.html">브랜드</a>
+          <a href="./bagel.html">베이글</a>
+          <a href="./story.html">이야기</a>
+          <a class="active" href="./recipe.html">레시피</a>
+          <a href="./customer.html">고객센터</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" aria-label="검색" onclick="location.href='./search.html'">
+            <img src="./이미지/header_search_icon_crop.png" alt="" />
+          </button>
+          <button type="button" aria-label="마이페이지" onclick="location.href='./login.html'">
+            <img src="./이미지/header_human_icon_crop.png" alt="" />
+          </button>
+          <button type="button" aria-label="장바구니" onclick="location.href='./cart.html'">
+            <img src="./이미지/header_sp_icon03_crop.png" alt="" />
+          </button>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-nav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="recipe-hero">
+        <div class="inner recipe-hero-inner">
+          <div class="recipe-hero-copy">
+            <p class="brand-label">맛있고 건강한 하루의 시작</p>
+            <h1>소담 베이글로<br /><span>완성하는 레시피</span></h1>
+            <p>건강한 재료와 정성 가득한 소담 베이글로<br />다양하고 맛있는 레시피를 만나보세요.</p>
+            <a class="btn white" href="#recipe-list">전체 레시피 보기</a>
+          </div>
+          <div class="recipe-hero-image image-slot">이미지</div>
+        </div>
+      </section>
+
+      <section class="recipe-category-section">
+        <div class="inner">
+          <div class="recipe-section-head">
+            <p class="brand-label">01. RECIPE CATEGORY</p>
+            <h2>레시피 카테고리</h2>
+            <p>원하는 레시피를 카테고리별로 찾아보세요.</p>
+          </div>
+          <div class="recipe-category-tabs" aria-label="레시피 카테고리">
+            <button class="active" type="button">전체 보기</button>
+            <button type="button">브런치</button>
+            <button type="button">디저트</button>
+            <button type="button">간편식</button>
+            <button type="button">영상 레시피</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="recipe-list-section" id="recipe-list">
+        <div class="inner">
+          <div class="recipe-title-row">
+            <div class="recipe-section-head">
+              <p class="brand-label">02. RECIPE LIST</p>
+              <h2>추천 레시피</h2>
+              <p>소담 베이글과 잘 어울리는 인기 레시피를 소개합니다.</p>
+            </div>
+            <a class="btn outline" href="#">전체 레시피 보기</a>
+          </div>
+          <div class="recipe-card-grid">
+            <article>
+              <div class="recipe-card-image image-slot">이미지</div>
+              <span>브런치</span>
+              <h3>아보카도 에그 베이글 샌드위치</h3>
+              <p>신선한 아보카도와 계란이 만난 든든하고 담백한 한 끼</p>
+              <small>15분 · 쉬움</small>
+            </article>
+            <article>
+              <div class="recipe-card-image image-slot">이미지</div>
+              <span>브런치</span>
+              <h3>연어 크림치즈 베이글</h3>
+              <p>연어와 크림치즈의 조화가 완벽한 브런치 메뉴</p>
+              <small>10분 · 쉬움</small>
+            </article>
+            <article>
+              <div class="recipe-card-image image-slot">이미지</div>
+              <span>디저트</span>
+              <h3>블루베리 크림치즈 베이글</h3>
+              <p>달콤한 블루베리와 크림치즈로 완성하는 디저트</p>
+              <small>10분 · 쉬움</small>
+            </article>
+            <article>
+              <div class="recipe-card-image image-slot">이미지</div>
+              <span>간편식</span>
+              <h3>참치 마요 베이글 샌드위치</h3>
+              <p>간단한 재료로 만드는 든든한 한 끼</p>
+              <small>10분 · 쉬움</small>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="video-recipe-section">
+        <div class="inner">
+          <div class="recipe-title-row">
+            <div class="recipe-section-head">
+              <p class="brand-label">03. VIDEO RECIPE</p>
+              <h2>영상 레시피</h2>
+              <p>영상으로 더 쉽게 따라해보세요!</p>
+            </div>
+            <a class="btn outline" href="#">유튜브 채널 바로가기</a>
+          </div>
+          <div class="video-recipe-grid">
+            <article><div class="video-image image-slot">이미지</div><h3>아침을 든든하게! 베이글 샌드위치 3종</h3><p>간단하고 맛있는 베이글 샌드위치</p></article>
+            <article><div class="video-image image-slot">이미지</div><h3>베이글을 더 맛있게 먹는 방법</h3><p>크림치즈부터 토핑까지 맛있게 먹는 꿀팁</p></article>
+            <article><div class="video-image image-slot">이미지</div><h3>홈메이드 베이글 만들기</h3><p>집에서도 쉽게 만드는 쫄깃한 베이글</p></article>
+            <article><div class="video-image image-slot">이미지</div><h3>베이글 디저트 레시피</h3><p>남은 베이글로 만드는 근사한 디저트</p></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="sns-recipe-section">
+        <div class="inner">
+          <div class="recipe-title-row">
+            <div class="recipe-section-head">
+              <p class="brand-label">04. SNS SHARE</p>
+              <h2>SNS에서 만난 소담 레시피</h2>
+              <p>인스타그램에서 #소담베이글 레시피를 확인해보세요!</p>
+            </div>
+            <a class="btn outline" href="#">인스타그램 보러가기</a>
+          </div>
+          <div class="sns-recipe-grid">
+            <div class="sns-image image-slot">이미지</div>
+            <div class="sns-image image-slot">이미지</div>
+            <div class="sns-image image-slot">이미지</div>
+            <div class="sns-image image-slot">이미지</div>
+            <div class="sns-image image-slot">이미지</div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner footer-inner">
+        <div>
+          <strong class="footer-logo">SODAM BAGEL</strong>
+          <p>상호 : 소담베이글 ㅣ 대표 : 김소담 ㅣ 사업자등록번호 : 123-45-67890</p>
+          <p>주소 : 서울특별시 강남구 테헤란로 123, 1층 ㅣ 고객센터 : 070-1234-5678</p>
+          <small>COPYRIGHT(C) SODAM BAGEL. ALL RIGHTS RESERVED.</small>
+        </div>
+        <div class="sns">
+          <a href="#" aria-label="Instagram"><img src="./이미지/footer_icon1.png" alt="" /></a>
+          <a href="#" aria-label="Facebook"><img src="./이미지/footer_icon2.png" alt="" /></a>
+          <a href="#" aria-label="YouTube"><img src="./이미지/footer_icon3.png" alt="" /></a>
+          <a href="#" aria-label="Blog"><img src="./이미지/footer_icon4.png" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainNav = document.querySelector(".main-nav");
+
+      if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+
+          document.body.classList.toggle("nav-open", !isOpen);
+          menuToggle.setAttribute("aria-expanded", String(!isOpen));
+          menuToggle.setAttribute("aria-label", isOpen ? "메뉴 열기" : "메뉴 닫기");
+        });
+
+        mainNav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            document.body.classList.remove("nav-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "메뉴 열기");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

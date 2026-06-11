@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>고객센터 | SODAM BAGEL</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="customer-subpage">
+    <header class="site-header">
+      <div class="inner header-inner">
+        <a class="brand" href="./index.html" aria-label="Sodam Bagel home">
+          <img src="./이미지/header_mainlogo_crop.png" alt="SODAM BAGEL" />
+        </a>
+        <nav class="main-nav" id="main-nav" aria-label="주요 메뉴">
+          <a href="./brand.html">브랜드</a>
+          <a href="./bagel.html">베이글</a>
+          <a href="./story.html">이야기</a>
+          <a href="./recipe.html">레시피</a>
+          <a class="active" href="./customer.html">고객센터</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" aria-label="검색" onclick="location.href='./search.html'">
+            <img src="./이미지/header_search_icon_crop.png" alt="" />
+          </button>
+          <button type="button" aria-label="마이페이지" onclick="location.href='./login.html'">
+            <img src="./이미지/header_human_icon_crop.png" alt="" />
+          </button>
+          <button type="button" aria-label="장바구니" onclick="location.href='./cart.html'">
+            <img src="./이미지/header_sp_icon03_crop.png" alt="" />
+          </button>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-nav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <nav class="sub-tabs customer-tabs" aria-label="고객센터 메뉴">
+        <a class="active" href="#notice">공지사항</a>
+        <a href="#faq">FAQ</a>
+        <a href="#inquiry">문의하기</a>
+        <a href="#guide">이용안내</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="customer-hero">
+        <div class="inner customer-hero-inner">
+          <div class="customer-hero-copy">
+            <p class="brand-label">CUSTOMER CENTER</p>
+            <h1>소담 베이글 <span>고객센터</span></h1>
+            <p>궁금한 점을 빠르게 해결하고,<br />더 나은 서비스를 제공해드리겠습니다.</p>
+            <form class="customer-search" action="#" role="search">
+              <input type="search" placeholder="궁금한 내용을 검색해보세요." aria-label="고객센터 검색" />
+              <button type="submit">검색</button>
+            </form>
+          </div>
+          <div class="customer-hero-image image-slot">이미지</div>
+        </div>
+      </section>
+
+      <section class="customer-section notice-section" id="notice">
+        <div class="inner customer-two-column">
+          <div class="brand-side-copy">
+            <p class="brand-label">01. NOTICE</p>
+            <h2>공지사항</h2>
+            <p>소담 베이글의 새로운 소식을 확인하세요.</p>
+          </div>
+          <div class="notice-table">
+            <div><span>공지</span><strong>신제품 '블루베리 베이글' 출시 안내</strong><time>2024-04-20</time></div>
+            <div><span>이벤트</span><strong>5월 가정의 달 감사 이벤트 진행</strong><time>2024-04-15</time></div>
+            <div><span>공지</span><strong>배송 지연 안내</strong><time>2024-04-10</time></div>
+            <div><span>공지</span><strong>소담 베이글 쇼룸 오픈 소식</strong><time>2024-04-01</time></div>
+            <div><span>이벤트</span><strong>리뷰 작성 시 적립금 2배 이벤트</strong><time>2024-03-25</time></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="customer-section faq-section" id="faq">
+        <div class="inner customer-two-column">
+          <div class="brand-side-copy">
+            <p class="brand-label">02. FAQ</p>
+            <h2>자주 묻는 질문</h2>
+            <p>자주 문의하시는 내용을 확인해보세요.</p>
+          </div>
+          <div class="faq-content">
+            <div class="faq-tabs">
+              <button class="active" type="button">전체</button>
+              <button type="button">주문/결제</button>
+              <button type="button">배송</button>
+              <button type="button">교환/환불</button>
+              <button type="button">제품</button>
+              <button type="button">기타</button>
+            </div>
+            <div class="faq-list">
+              <article class="open"><h3>Q. 주문 취소는 어떻게 하나요?</h3><p>A. 상품 준비 전 단계에서는 마이페이지에서 직접 취소가 가능합니다.</p></article>
+              <article><h3>Q. 배송 기간은 얼마나 걸리나요?</h3></article>
+              <article><h3>Q. 제품 보관 방법이 궁금해요.</h3></article>
+              <article><h3>Q. 교환/환불은 어떻게 신청하나요?</h3></article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="customer-section inquiry-section" id="inquiry">
+        <div class="inner customer-two-column">
+          <div class="brand-side-copy">
+            <p class="brand-label">03. INQUIRY</p>
+            <h2>문의하기</h2>
+            <p>문의 유형을 선택하고 내용을 남겨주세요. 빠르게 답변드리겠습니다.</p>
+            <div class="contact-mini-card">
+              <strong>고객센터 전화</strong>
+              <span>070-1234-5678</span>
+              <small>평일 09:00 - 18:00</small>
+            </div>
+            <div class="contact-mini-card">
+              <strong>이메일 문의</strong>
+              <span>hello@sodambagel.com</span>
+              <small>24시간 접수 가능</small>
+            </div>
+          </div>
+          <form class="inquiry-form" action="#">
+            <label><span>문의 유형 *</span><select><option>문의 유형을 선택해주세요.</option></select></label>
+            <label><span>제목 *</span><input type="text" placeholder="제목을 입력해주세요." /></label>
+            <label><span>내용 *</span><textarea placeholder="문의 내용을 자세히 입력해주세요."></textarea></label>
+            <label><span>첨부파일</span><input type="file" /></label>
+            <button type="submit">문의 접수하기</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="customer-section guide-section" id="guide">
+        <div class="inner customer-two-column">
+          <div class="brand-side-copy">
+            <p class="brand-label">04. GUIDE</p>
+            <h2>이용안내</h2>
+            <p>더 편리한 쇼핑을 위한 정보를 안내해드립니다.</p>
+          </div>
+          <div class="guide-grid">
+            <article><strong>주문 안내</strong><span>주문 방법 및 결제 수단 안내</span></article>
+            <article><strong>배송 안내</strong><span>배송 기간 및 배송비 안내</span></article>
+            <article><strong>교환/환불 안내</strong><span>교환 및 환불 절차 안내</span></article>
+            <article><strong>회원 혜택 안내</strong><span>등급 혜택 및 적립금 안내</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="customer-section store-contact-section">
+        <div class="inner customer-two-column">
+          <div class="brand-side-copy">
+            <p class="brand-label">05. STORE CONTACT</p>
+            <h2>매장 연락처</h2>
+            <p>가까운 매장에 직접 문의하실 수 있습니다.</p>
+          </div>
+          <div class="store-contact-grid">
+            <article><div class="store-contact-image image-slot">이미지</div><strong>홍대점</strong><span>02-123-4567</span><p>서울 마포구 홍익로 123</p></article>
+            <article><div class="store-contact-image image-slot">이미지</div><strong>강남점</strong><span>02-234-5678</span><p>서울 강남구 강남대로 456</p></article>
+            <article><div class="store-contact-image image-slot">이미지</div><strong>잠실점</strong><span>02-345-6789</span><p>서울 송파구 올림픽로 789</p></article>
+            <article><div class="store-contact-image image-slot">이미지</div><strong>부산 해운대점</strong><span>051-123-4567</span><p>부산 해운대구 해운대로 101</p></article>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner footer-inner">
+        <div>
+          <strong class="footer-logo">SODAM BAGEL</strong>
+          <p>상호 : 소담베이글 ㅣ 대표 : 김소담 ㅣ 사업자등록번호 : 123-45-67890</p>
+          <p>주소 : 서울특별시 강남구 테헤란로 123, 1층 ㅣ 고객센터 : 070-1234-5678</p>
+          <small>COPYRIGHT(C) SODAM BAGEL. ALL RIGHTS RESERVED.</small>
+        </div>
+        <div class="sns">
+          <a href="#" aria-label="Instagram"><img src="./이미지/footer_icon1.png" alt="" /></a>
+          <a href="#" aria-label="Facebook"><img src="./이미지/footer_icon2.png" alt="" /></a>
+          <a href="#" aria-label="YouTube"><img src="./이미지/footer_icon3.png" alt="" /></a>
+          <a href="#" aria-label="Blog"><img src="./이미지/footer_icon4.png" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainNav = document.querySelector(".main-nav");
+
+      if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+
+          document.body.classList.toggle("nav-open", !isOpen);
+          menuToggle.setAttribute("aria-expanded", String(!isOpen));
+          menuToggle.setAttribute("aria-label", isOpen ? "메뉴 열기" : "메뉴 닫기");
+        });
+
+        mainNav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            document.body.classList.remove("nav-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "메뉴 열기");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>

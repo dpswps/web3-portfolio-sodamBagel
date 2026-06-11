@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>장바구니 | SODAM BAGEL</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body class="cart-page">
+    <header class="site-header">
+      <div class="inner header-inner">
+        <a class="brand" href="./index.html" aria-label="Sodam Bagel home">
+          <img src="./이미지/header_mainlogo_crop.png" alt="SODAM BAGEL" />
+        </a>
+        <nav class="main-nav" id="main-nav" aria-label="주요 메뉴">
+          <a href="./brand.html">브랜드</a>
+          <a href="./bagel.html">베이글</a>
+          <a href="./story.html">이야기</a>
+          <a href="./recipe.html">레시피</a>
+          <a href="./customer.html">고객센터</a>
+        </nav>
+        <div class="header-actions">
+          <button type="button" aria-label="검색" onclick="location.href='./search.html'">
+            <img src="./이미지/header_search_icon_crop.png" alt="" />
+          </button>
+          <button type="button" aria-label="마이페이지" onclick="location.href='./login.html'">
+            <img src="./이미지/header_human_icon_crop.png" alt="" />
+          </button>
+          <button type="button" aria-label="장바구니" onclick="location.href='./cart.html'">
+            <img src="./이미지/header_sp_icon03_crop.png" alt="" />
+          </button>
+        </div>
+        <button class="menu-toggle" type="button" aria-label="메뉴 열기" aria-controls="main-nav" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="cart-section">
+        <div class="inner">
+          <p class="cart-breadcrumb">홈 &gt; 장바구니</p>
+          <h1>장바구니</h1>
+          <p class="cart-summary-text">선택하신 상품은 <strong>3개</strong>이며, 총 <strong>33,700원</strong> 입니다.</p>
+          <div class="cart-layout">
+            <section class="cart-list" aria-label="장바구니 상품">
+              <div class="cart-list-head">
+                <label><input type="checkbox" checked />전체선택</label>
+                <button type="button">선택삭제</button>
+              </div>
+              <article class="cart-item">
+                <input type="checkbox" checked aria-label="크랜베리 베이글 선택" />
+                <div class="cart-item-image image-slot">이미지</div>
+                <div class="cart-item-info">
+                  <h2>크랜베리 베이글 (4개입)</h2>
+                  <p>1봉 (4개)<br />개당 2,900원</p>
+                </div>
+                <div class="qty-control"><button>-</button><span>1</span><button>+</button></div>
+                <strong>11,600원</strong>
+                <button class="cart-remove" type="button">×</button>
+              </article>
+              <article class="cart-item">
+                <input type="checkbox" checked aria-label="연어 크림치즈 베이글 샌드위치 선택" />
+                <div class="cart-item-image image-slot">이미지</div>
+                <div class="cart-item-info">
+                  <h2>연어 크림치즈 베이글 샌드위치</h2>
+                  <p>1개<br />6,800원</p>
+                </div>
+                <div class="qty-control"><button>-</button><span>1</span><button>+</button></div>
+                <strong>6,800원</strong>
+                <button class="cart-remove" type="button">×</button>
+              </article>
+              <article class="cart-item">
+                <input type="checkbox" checked aria-label="블루베리 프리미엄 크림치즈 선택" />
+                <div class="cart-item-image image-slot">이미지</div>
+                <div class="cart-item-info">
+                  <h2>블루베리 프리미엄 크림치즈</h2>
+                  <p>1개 (200g)<br />5,300원</p>
+                </div>
+                <div class="qty-control"><button>-</button><span>1</span><button>+</button></div>
+                <strong>5,300원</strong>
+                <button class="cart-remove" type="button">×</button>
+              </article>
+              <div class="cart-actions-row">
+                <a class="btn outline" href="./bagel.html">쇼핑 계속하기</a>
+                <button type="button">장바구니 비우기</button>
+              </div>
+            </section>
+
+            <aside class="order-summary-card">
+              <h2>주문요약</h2>
+              <dl>
+                <div><dt>상품금액 (3개)</dt><dd>23,700원</dd></div>
+                <div><dt>배송비</dt><dd>3,000원</dd></div>
+                <div><dt>할인금액</dt><dd class="discount">-3,000원</dd></div>
+              </dl>
+              <label class="coupon-input"><input type="text" placeholder="쿠폰코드를 입력해주세요" /><button>적용</button></label>
+              <div class="total-price"><span>총 주문금액</span><strong>33,700원</strong></div>
+              <button class="order-button" type="button">주문하기</button>
+              <button class="gift-button" type="button">선물하기</button>
+              <div class="delivery-progress">
+                <strong>10,000원 이상 구매 시 무료배송</strong>
+                <p>지금 6,300원 더 담으면 무료배송 혜택을 받아요!</p>
+                <span></span>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="cart-recommend-section">
+        <div class="inner">
+          <h2>함께 구매하면 좋은 상품</h2>
+          <div class="cart-recommend-grid">
+            <article><div class="cart-recommend-image image-slot">이미지</div><h3>플레인 베이글 (4개입)</h3><strong>10,800원</strong></article>
+            <article><div class="cart-recommend-image image-slot">이미지</div><h3>우리밀 통밀 베이글 (4개입)</h3><strong>11,200원</strong></article>
+            <article><div class="cart-recommend-image image-slot">이미지</div><h3>어니언 베이글 (4개입)</h3><strong>11,600원</strong></article>
+            <article><div class="cart-recommend-image image-slot">이미지</div><h3>무화과 크림치즈</h3><strong>5,500원</strong></article>
+            <article><div class="cart-recommend-image image-slot">이미지</div><h3>허니 버터</h3><strong>4,800원</strong></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cart-service-section">
+        <div class="inner cart-service-grid">
+          <article><strong>신선한 당일 생산</strong><span>주문 당일 생산한 베이글을 신선하게 배송해드려요.</span></article>
+          <article><strong>안전한 포장</strong><span>베이글이 눌리지 않도록 꼼꼼하게 포장해드려요.</span></article>
+          <article><strong>고객센터</strong><span>궁금한 점이 있으시면 언제든 문의해주세요.</span></article>
+        </div>
+      </section>
+
+      <section class="cart-login-banner">
+        <div class="inner cart-login-inner">
+          <div>
+            <h2>소담 베이글의 다양한 소식과 혜택을<br />가장 먼저 받아보세요!</h2>
+            <a class="btn white" href="./login.html">로그인하고 혜택 받기</a>
+          </div>
+          <div class="cart-banner-image image-slot">이미지</div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner footer-inner">
+        <div>
+          <strong class="footer-logo">SODAM BAGEL</strong>
+          <p>상호 : 소담베이글 ㅣ 대표 : 김소담 ㅣ 사업자등록번호 : 123-45-67890</p>
+          <p>주소 : 서울특별시 강남구 테헤란로 123, 1층 ㅣ 고객센터 : 070-1234-5678</p>
+          <small>COPYRIGHT(C) SODAM BAGEL. ALL RIGHTS RESERVED.</small>
+        </div>
+        <div class="sns">
+          <a href="#" aria-label="Instagram"><img src="./이미지/footer_icon1.png" alt="" /></a>
+          <a href="#" aria-label="Facebook"><img src="./이미지/footer_icon2.png" alt="" /></a>
+          <a href="#" aria-label="YouTube"><img src="./이미지/footer_icon3.png" alt="" /></a>
+          <a href="#" aria-label="Blog"><img src="./이미지/footer_icon4.png" alt="" /></a>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const menuToggle = document.querySelector(".menu-toggle");
+      const mainNav = document.querySelector(".main-nav");
+
+      if (menuToggle && mainNav) {
+        menuToggle.addEventListener("click", () => {
+          const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+
+          document.body.classList.toggle("nav-open", !isOpen);
+          menuToggle.setAttribute("aria-expanded", String(!isOpen));
+          menuToggle.setAttribute("aria-label", isOpen ? "메뉴 열기" : "메뉴 닫기");
+        });
+
+        mainNav.querySelectorAll("a").forEach((link) => {
+          link.addEventListener("click", () => {
+            document.body.classList.remove("nav-open");
+            menuToggle.setAttribute("aria-expanded", "false");
+            menuToggle.setAttribute("aria-label", "메뉴 열기");
+          });
+        });
+      }
+    </script>
+  </body>
+</html>
